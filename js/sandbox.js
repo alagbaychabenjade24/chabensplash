@@ -3,11 +3,19 @@ const imageContainer = document.getElementById('image-container');
 const loader = document.getElementById('loader');
 const menu = document.querySelector('.menu');
 const navLinks = document.querySelector('.nav-links');
+const links = document.querySelectorAll('.nav-links li');
 
 const navAnimation = () => {
     menu.addEventListener('click', () => {
         navLinks.classList.toggle('nav-active');
         menu.classList.toggle('toggle');
+    });
+
+    links.forEach(link => {
+        link.addEventListener('click', () => {
+            navLinks.classList.remove('nav-active');
+            menu.classList.remove('toggle');
+        });
     });
 };
 
