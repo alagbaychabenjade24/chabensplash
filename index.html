@@ -6,6 +6,8 @@
     <title>ChabenSplash</title>
     <script src="https://kit.fontawesome.com/3944c4b44a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/infinite.css">
+    <link rel="stylesheet" href="css/mqueries/small.css">
+    <link rel="stylesheet" href="css/mqueries/large.css">
 </head>
 <body>
     <header id="navigation">
@@ -26,15 +28,29 @@
                 <div class="logo-title">
                     <a href="#homepage"><h1>ChabenSplash</h1></a>
                 </div>
-        
+
                 <ul class="nav-links">
                     <li class="home"><a href="#">Home</a></li>
                     <li class="api-dev"><a href="https://unsplash.com/developers" target="_blank">API/Developers</a></li>
                     <li class="ellipsis"><i class="fas fa-ellipsis-h"></i></li>
                     <li class="prev-portfolio"><a href="https://alagbaychabenjade24.github.io/portfolio.v1/" target="_blank">Preview Portfolio</a></li>
                     <li class="launch"><a href="#homepage-footer">Launch</a></li>
-                    <li class="repo"><a href="#">Source Code</a></li>
+                    <li class="repo"><a href="https://alagbaychabenjade24.github.io/chabensplash/" target="_blank">Source Code</a></li>
                 </ul>
+
+                <div class="small-menu">
+                    <div class="menu-container">
+                        <div class="home-folio">
+                            <a href="https://alagbaychabenjade24.github.io/portfolio.v1/" target="_blank"><img src="img/user.jpg" alt="Home Portfolio"></a>
+                        </div>
+    
+                        <div class="menu">
+                            <div class="bar-1"></div>
+                            <div class="bar-2"></div>
+                            <div class="bar-3"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </nav>
     </header>
@@ -46,7 +62,7 @@
                 <p class="pics">Over 2 million+ high quality stock images shared by our talented community.</p>
                 <p class="creators">Powered by creators everywhere.</p>
         
-                <form action="#">
+                <form action="#" class="home-form">
                     <button class="magni-search"><i class="fas fa-search fa-lg"></i></button>
                     <input type="search" name="search-bar" id="search-bar" class="search-bar" placeholder="This is just a sample search bar" required>
                 </form>

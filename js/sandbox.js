@@ -1,6 +1,17 @@
 const alert = document.querySelector('.alert');
 const imageContainer = document.getElementById('image-container');
 const loader = document.getElementById('loader');
+const menu = document.querySelector('.menu');
+const navLinks = document.querySelector('.nav-links');
+
+const navAnimation = () => {
+    menu.addEventListener('click', () => {
+        navLinks.classList.toggle('nav-active');
+        menu.classList.toggle('toggle');
+    });
+};
+
+navAnimation();
 
 alert.addEventListener('click', () => {
     alert.classList.add('remove-alert');

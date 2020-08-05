@@ -1,0 +1,165 @@
+@media screen and (max-width: 767px) {
+    #navigation {
+        position: initial;
+    }
+    
+    .alert {
+        font-size: 8px;
+        padding: 8px 0;
+        letter-spacing: 0.8px;
+    }
+    
+    .alert-container {
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    .alert-msg {
+        width: 100%;
+        padding-left: 0;
+    }
+    
+    .covid-alert img {
+        width: 19px;
+        margin-right: 5px;
+    }
+    
+    .bold-sign {
+        font-size: 11px;
+        padding-right: 4px;
+    }
+    
+    .close-alert {
+        display: none;
+    }
+    
+    nav {
+        display: flex;
+        justify-content: center;
+        height: 10vh;
+        cursor: default;
+        background: white;
+    }
+    
+    .nav-container {
+        font-size: 12px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 90%;
+        margin: auto;
+    }
+    
+    .logo-title h1 {
+        font-size: 18px;
+    }
+    
+    .nav-links {
+        font-size: 15px;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        height: 40vh;
+        top: 18vh;
+        border-radius: 5px;
+        background: #111;
+        align-items: flex-start;
+        width: 78%;
+        position: absolute;
+        padding: 0 20px;
+        transform: translateY(-150%);
+        transition: 0.4s ease-in-out;
+    }
+
+    .nav-links a {
+        color: white;
+    }
+
+    .nav-active {
+        transform: translateY(0%);
+    }
+    
+    .ellipsis {
+        display: none;
+    }
+    
+    .prev-portfolio a {
+        color: white;
+        border: none;
+        padding: 0;
+    }
+    
+    .launch {
+        border-left: none;
+        padding: 0;
+    }
+    
+    .small-menu {
+        display: block;
+        width: 20%;
+    }
+
+    .menu-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .menu {
+        cursor: pointer;
+    }
+    
+    .menu div {
+        background: grey;
+        height: 2px;
+        width: 20px;
+        transition: 0.6s ease-in-out;
+    }
+
+    .bar-2 {
+        margin: 4px 0;
+    }
+
+    #homepage {
+        height: 50vh;
+    }
+    
+    .homepage-container {
+        width: 90%;
+        height: 80vh;
+    }
+    
+    .title {
+        font-size: 21px;
+        margin-bottom: 10px;
+    }
+    
+    .pics {
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+    
+    .creators {
+        font-size: 15px;
+        margin-bottom: 13px;
+    }
+    
+    .home-form {
+        display: none;
+    }
+    
+    .trends {
+        display: none;
+    }
+    
+    #homepage-footer {
+        display: none;
+    }
+    
+    #image-container {
+        grid-template-columns: 1fr;
+        grid-gap: 15px;
+        width: 100%;
+        margin: 30px auto 0;
+    }
+}
