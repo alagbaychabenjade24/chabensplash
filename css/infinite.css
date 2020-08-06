@@ -52,8 +52,6 @@ header {
 
 /* -- Navigation Bar -- */
 nav {
-    position: sticky;
-    margin: 0 auto;
     background: whitesmoke;
 }
 

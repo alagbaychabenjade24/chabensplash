@@ -1,0 +1,59 @@
+@media screen and (max-width: 991px) {
+    /* -- Safety Precautions -- */
+    .caution {
+        height: 6vh;
+    }
+
+    .caution-content {
+        font-size: 14px;
+    }
+
+    .caution-img {
+        width: 30px;
+    }
+
+    .caution-bold {
+        font-size: 16px;
+    }
+
+    /* -- Navigation Bar -- */
+    .nav-container {
+        width: 95%;
+        height: 9vh;
+    }
+
+    /* -- Navigation Logo -- */
+    .logo h1 {
+        font-size: 27px;
+    }
+
+    /* -- Navigation Lists -- */
+    .nav-links {
+        width: 35%;
+    }
+
+    .nav-links a {
+        font-size: 15px;
+    }
+
+    /* -- Homepage -- */
+    #homepage {
+        height: 50vh;
+    }
+
+    .homepage-header-container {
+        height: 40vh;
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .homepage-footer {
+        height: 7vh;
+    }
+
+    /* -- Image Container -- */
+    #image-container {
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+    }
+}
