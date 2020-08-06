@@ -1,3 +1,36 @@
+@media screen and (max-width: 2560px) {
+    #homepage {
+        height: 50vh;
+    }
+
+    .homepage-header-container {
+        height: 40vh;
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .homepage-footer {
+        height: 7vh;
+    }
+
+    #image-container {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    #image-container {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+     /* -- Navigation Lists -- */
+     .nav-links {
+        width: 40%;
+    }
+}
+
 @media screen and (max-width: 991px) {
     /* -- Safety Precautions -- */
     .caution {
@@ -53,7 +86,7 @@
 
     /* -- Image Container -- */
     .images {
-        padding-top: 30px;
+        padding-top: 50px;
     }
 
     #image-container {

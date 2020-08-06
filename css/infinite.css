@@ -187,7 +187,8 @@ nav {
 
 /* -- Image Container -- */
 .images {
-    background: whitesmoke
+    background: whitesmoke;
+    padding-top: 50px;
 }
 
 #image-container {
