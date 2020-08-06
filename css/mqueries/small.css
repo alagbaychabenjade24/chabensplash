@@ -1,4 +1,8 @@
 @media screen and (max-width: 767px) {
+    header {
+        position: initial;
+    }
+
    /* -- Safety Precautions -- */
     .caution {
         height: 7vh;
@@ -20,10 +24,6 @@
     }
 
     /* -- Navigation Bar -- */
-    nav {
-        position: initial;
-    }
-
     .nav-container {
         display: flex;
         justify-content: space-between;
