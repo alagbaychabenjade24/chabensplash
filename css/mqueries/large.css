@@ -24,6 +24,20 @@
     }
 }
 
+@media screen and (max-width: 1280px) {
+    #homepage {
+        height: 100vh;
+    }
+
+    .homepage-header-container {
+        height: 80vh;
+    }
+    
+    .homepage-footer {
+        height: 17vh;
+    }
+}
+
 @media screen and (max-width: 1024px) {
      /* -- Navigation Lists -- */
      .nav-links {
