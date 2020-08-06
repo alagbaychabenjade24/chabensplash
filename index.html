@@ -4,87 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ChabenSplash</title>
-    <script src="https://kit.fontawesome.com/3944c4b44a.js" crossorigin="anonymous"></script>
+    <!-- <script src="https://kit.fontawesome.com/3944c4b44a.js" crossorigin="anonymous"></script> -->
     <link rel="stylesheet" href="css/infinite.css">
     <link rel="stylesheet" href="css/mqueries/small.css">
-    <link rel="stylesheet" href="css/mqueries/large.css">
+    <!-- <link rel="stylesheet" href="css/mqueries/large.css"> -->
 </head>
 <body>
-    <header id="navigation">
-        <div class="alert">
-            <div class="alert-container">
-                <div class="alert-msg">
-                    <p><span class="covid-alert"><img src="img/hand.gif" alt="Hand Alert"></img></span><span class="bold-sign">STAY HOME. SAVE LIVES.</span>Help stop coronavirus</p>
-                </div>
-    
-                <div class="close-alert">
-                    <i class="far fa-times-circle fa-lg"></i>
-                </div>
+    <header>
+        <div class="caution">
+            <div class="caution-content">
+                <img src="img/hand.gif" alt="Caution" class="caution-img">
+                <p>
+                    <span class="caution-bold">STAY HOME. SAVE LIVES.</span> 
+                    Help stop coronavirus.
+                </p>
             </div>
-        </div> 
-        
+        </div>
+
         <nav>
             <div class="nav-container">
-                <div class="logo-title">
-                    <a href="#homepage"><h1>ChabenSplash</h1></a>
+                <div class="logo">
+                    <a href="#"><h1>Chaben Alagbay</h1></a>
                 </div>
-
+    
                 <ul class="nav-links">
                     <li class="home"><a href="#">Home</a></li>
-                    <li class="api-dev"><a href="https://unsplash.com/developers" target="_blank">API/Developers</a></li>
-                    <li class="ellipsis"><i class="fas fa-ellipsis-h"></i></li>
-                    <li class="prev-portfolio"><a href="https://alagbaychabenjade24.github.io/portfolio.v1/" target="_blank">Preview Portfolio</a></li>
-                    <li class="launch"><a href="#homepage-footer">Launch</a></li>
-                    <li class="repo"><a href="https://alagbaychabenjade24.github.io/chabensplash/" target="_blank">Source Code</a></li>
+                    <li class="portfolio"><a href="#">Portfolio</a></li>
+                    <li class="source-code"><a href="#">Source Code</a></li>
                 </ul>
 
-                <div class="small-menu">
-                    <div class="menu-container">
-                        <div class="home-folio">
-                            <a href="https://alagbaychabenjade24.github.io/portfolio.v1/" target="_blank"><img src="img/user.jpg" alt="Home Portfolio"></a>
-                        </div>
-    
-                        <div class="menu">
-                            <div class="bar-1"></div>
-                            <div class="bar-2"></div>
-                            <div class="bar-3"></div>
-                        </div>
-                    </div>
+                <div class="menu">
+                    <div class="l1"></div>
+                    <div class="l2"></div>
+                    <div class="l3"></div>
                 </div>
             </div>
         </nav>
     </header>
 
-    <main>
+    <main>  
         <section id="homepage">
-            <div class="homepage-container">
-                <h1 class="title">ChabenSplash</h1>
-                <p class="pics">Over 2 million+ high quality stock images shared by our talented community.</p>
-                <p class="creators">Powered by creators everywhere.</p>
-        
-                <form action="#" class="home-form">
-                    <button class="magni-search"><i class="fas fa-search fa-lg"></i></button>
-                    <input type="search" name="search-bar" id="search-bar" class="search-bar" placeholder="This is just a sample search bar" required>
-                </form>
- 
-                <p class="trends">
-                    Popular Images: 
-                        <a href="https://unsplash.com/images/nature/flower" target="_blank">flowers,</a>
-                        <a href="https://unsplash.com/wallpapers" target="_blank">wallpapers,</a>
-                        <a href="https://unsplash.com/backgrounds" target="_blank">backgrounds,</a>
-                        <a href="https://unsplash.com/backgrounds" target="_blank">happy,</a>
-                        <a href="https://unsplash.com/images/feelings/love" target="_blank">love</a>
-                </p>
+            <div class="homepage-header-container">
+                <div class="homepage-header">
+                    <h1 class="site-name">ChabenSplash</h1>
+                    <p class="mils">
+                        Over 2 million+ high quality stock images and videos shared by our talented community.
+                    </p>
+                    <p class="creators">Powered by creators everywhere.</p>
+                </div>
             </div>
 
-            <div id="homepage-footer">   
-                <p class="photo-owner">Photo by <a href="https://unsplash.com/@ronaldgijezen">Ronald Gijezen</a>.</p>
-                <p class="portfolio">See more projects on <a href="https://alagbaychabenjade24.github.io/portfolio.v1/" target="_blank">Chaben Alagbay's Portfolio</a></p>
-                <p class="website-maker">All you need to create a website.</p>
+            <div class="homepage-footer">
+                <p class="image-owner"><a href="https://unsplash.com/@ronaldgijezen" target="_blank">Free Image by Ronald Gijezen</a></p>
             </div>
         </section>
 
-        <section id="image-container"></section>
+        <section class="images">
+            <div id="image-container"></div>
+        </section>
     </main>
 
     <script type="text/javascript" src="js/sandbox.js"></script>

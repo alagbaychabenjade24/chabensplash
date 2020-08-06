@@ -1,29 +1,12 @@
-const alert = document.querySelector('.alert');
 const imageContainer = document.getElementById('image-container');
 const loader = document.getElementById('loader');
-const menu = document.querySelector('.menu');
-const navLinks = document.querySelector('.nav-links');
-const links = document.querySelectorAll('.nav-links li');
+const home = document.querySelector('.home'); 
 
-const navAnimation = () => {
-    menu.addEventListener('click', () => {
-        navLinks.classList.toggle('nav-active');
-        menu.classList.toggle('toggle');
-    });
 
-    links.forEach(link => {
-        link.addEventListener('click', () => {
-            navLinks.classList.remove('nav-active');
-            menu.classList.remove('toggle');
-        });
-    });
-};
-
-navAnimation();
-
-alert.addEventListener('click', () => {
-    alert.classList.add('remove-alert');
+home.addEventListener('click', load => {
+    load.preventDefault();
 });
+
 
 let ready = false;
 let imagesLoaded = 0; 
@@ -105,3 +88,23 @@ window.addEventListener('scroll', () => {
 
 // On Load
 getPhotos();
+
+const menu = document.querySelector('.menu');
+const navLink = document.querySelector('.nav-links');
+const links = document.querySelectorAll('.nav-links li');
+
+const navAnimations = () => {
+    menu.addEventListener('click', () => {
+        navLink.classList.toggle('nav-active');  
+        menu.classList.toggle('rotate');
+    });
+
+    links.forEach(link => {
+        link.addEventListener('click', () => {
+            navLink.classList.remove('nav-active');  
+            menu.classList.remove('rotate');
+        });
+    });
+};
+
+navAnimations();

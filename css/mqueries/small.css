@@ -1,165 +1,119 @@
 @media screen and (max-width: 767px) {
-    #navigation {
+   /* -- Safety Precautions -- */
+    .caution {
+        height: 7vh;
+    }
+
+    .caution-content {
+        font-size: 8px;
+    }
+
+    .caution-img {
+        width: 19px; 
+        padding-right: 5px;
+    }
+
+    .caution-bold {
+        font-size: 11px;
+        font-weight: 800;
+        letter-spacing: 1px;
+    }
+
+    /* -- Navigation Bar -- */
+    nav {
         position: initial;
     }
-    
-    .alert {
-        font-size: 8px;
-        padding: 8px 0;
-        letter-spacing: 0.8px;
-    }
-    
-    .alert-container {
-        width: 90%;
-        margin: 0 auto;
-    }
-    
-    .alert-msg {
-        width: 100%;
-        padding-left: 0;
-    }
-    
-    .covid-alert img {
-        width: 19px;
-        margin-right: 5px;
-    }
-    
-    .bold-sign {
-        font-size: 11px;
-        padding-right: 4px;
-    }
-    
-    .close-alert {
-        display: none;
-    }
-    
-    nav {
-        display: flex;
-        justify-content: center;
-        height: 10vh;
-        cursor: default;
-        background: white;
-    }
-    
+
     .nav-container {
-        font-size: 12px;
         display: flex;
         justify-content: space-between;
         align-items: center;
         width: 90%;
-        margin: auto;
+        margin: 0 auto;
+        height: 10vh;
     }
-    
-    .logo-title h1 {
-        font-size: 18px;
+
+    /* -- Navigation Logo -- */
+    .logo h1 {
+        font-size: 19px;
     }
-    
+
+    /* -- Navigation Lists -- */
     .nav-links {
-        font-size: 15px;
-        display: flex;
-        justify-content: space-around;
         flex-direction: column;
-        height: 40vh;
-        top: 18vh;
-        border-radius: 5px;
-        background: #111;
         align-items: flex-start;
-        width: 78%;
+        justify-content: space-around;
+        width: 90%;
         position: absolute;
-        padding: 0 20px;
-        transform: translateY(-150%);
-        transition: 0.4s ease-in-out;
+        top: 19vh;
+        border-radius: 5px;
+        height: 35vh;
+        background: #111;
+        transform: translateY(-155%);
+        transition: 0.6s ease-in-out;
     }
 
     .nav-links a {
         color: white;
+        font-size: 15px;
+        padding-left: 15px;
+    }
+
+    .source-code a {
+        color: white;
+        background: none;
+        padding-left: 15px;
+        border: none;
     }
 
     .nav-active {
         transform: translateY(0%);
     }
-    
-    .ellipsis {
-        display: none;
-    }
-    
-    .prev-portfolio a {
-        color: white;
-        border: none;
-        padding: 0;
-    }
-    
-    .launch {
-        border-left: none;
-        padding: 0;
-    }
-    
-    .small-menu {
-        display: block;
-        width: 20%;
-    }
 
-    .menu-container {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-
+    /* -- Navigation Menu/Burger -- */
     .menu {
-        cursor: pointer;
-    }
-    
-    .menu div {
-        background: grey;
-        height: 2px;
-        width: 20px;
-        transition: 0.6s ease-in-out;
+        display: block;
     }
 
-    .bar-2 {
-        margin: 4px 0;
-    }
-
+    /* -- Homepage -- */
     #homepage {
         height: 50vh;
     }
-    
-    .homepage-container {
+
+    .homepage-header-container {
+        height: 40vh;
         width: 90%;
-        height: 80vh;
+        margin: 0 auto;
     }
-    
-    .title {
+
+    .site-name {
         font-size: 21px;
-        margin-bottom: 10px;
     }
-    
-    .pics {
+
+    .mils {
         font-size: 15px;
-        margin-bottom: 5px;
+        margin: 15px 0 5px;
     }
-    
+
     .creators {
         font-size: 15px;
-        margin-bottom: 13px;
     }
-    
-    .home-form {
-        display: none;
+
+    .homepage-footer {
+        height: 7vh;
     }
-    
-    .trends {
-        display: none;
+
+    .image-owner a {
+        font-size: 13px;
     }
-    
-    #homepage-footer {
-        display: none;
+
+    /* -- Image Container -- */
+    .images {
+        padding-top: 30px;
     }
-    
+
     #image-container {
         grid-template-columns: 1fr;
-        grid-gap: 15px;
         width: 100%;
-        margin: 30px auto 0;
     }
 }

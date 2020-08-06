@@ -1,115 +1,88 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
 
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+
 html {
     font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
-    scroll-behavior: smooth;
 }
 
 * {
     padding: 0;
     margin: 0;
+    outline: none;
 }
 
-body {
-    background: whitesmoke;
-}
-
-/* -- Navigation Bar -- */
-#navigation {
-    width: 100%;
+header {
     position: sticky;
     top: 0;
 }
 
-.alert {
-    font-size: 10.5px;
+/* -- Safety Precautions -- */
+.caution {
     background: #111;
-    color: whitesmoke;
-    padding: 8px 0;
-    letter-spacing: 0.8px;
-}
-
-.alert-container {
     display: flex;
     justify-content: center;
-    width: 95%;
-    margin: 0 auto;
+    user-select: none;
+    height: 7vh;
 }
 
-.alert-msg {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    padding-left: 8px;
-}
-
-.alert p {
+.caution-content {
     display: flex;
     align-items: center;
+    font-size: 12.5px;
+    letter-spacing: 0.3px;
     color: whitesmoke;
 }
 
-.covid-alert img {
+.caution-img {
     width: 25px;
-    margin-right: 10px;
+    padding-right: 10px;
 }
 
-.bold-sign {
+.caution-bold {
     font-size: 14px;
-    font-weight: bold;
-    padding-right: 4px;
+    font-weight: 800;
+    letter-spacing: 1px;
 }
 
-.close-alert {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    cursor: pointer;
-    color: whitesmoke;
-}
-
-.close-alert i:hover {
-    color: orangered;
-}
-
+/* -- Navigation Bar -- */
 nav {
-    display: flex;
-    justify-content: center;
-    height: 10vh;
-    cursor: default;
-    background: white;
+    position: sticky;
+    margin: 0 auto;
+    background: whitesmoke;
 }
 
 .nav-container {
-    font-size: 14px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 95%;
-    margin: auto;
+    width: 90%;
+    margin: 0 auto;
+    height: 10vh;
 }
 
-.logo-title a {
+/* -- Navigation Logo -- */
+.logo a {
     font-family: 'Kaushan Script', cursive;
+    color: #111;
     text-decoration: none;
-    color: rgb(49, 49, 49);
 }
 
-.logo-title a:hover {
-    color: black;
+.logo h1 {
+    font-size: 24px;
 }
 
-.logo-title h1 {
-    font-size: 25px;
-}
-
+/* -- Navigation Lists -- */
 .nav-links {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 47%;
+    width: 25%;
 }
 
 .nav-links li {
@@ -117,191 +90,106 @@ nav {
 }
 
 .nav-links a {
-    color: grey;
+    font-size: 14px;
     text-decoration: none;
+    color: #767676;
 }
 
-.home a {
-    cursor: pointer;
-}
-
-.home a:hover,
-.api-dev a:hover {
-    color: black;
-}
-
-.ellipsis {
-    cursor: pointer;
-    color: grey;
-}
-
-.ellipsis:hover {
-    color: black;
-}
-
-.prev-portfolio a {
-    color: grey;
-    border: 0.10px solid rgb(128, 128, 128);
-    border-radius: 3px;
-    padding: 5px 9px;
-    cursor: pointer;
-}
-
-.prev-portfolio a:hover {
-    color: black;
-    border: 0.10px solid black;
-}
-
-.launch {
-    border-left: 1px solid grey;
-    padding: 5px 0 5px 16px;
-}
-
-.launch a:hover {
-    color: black;
-}
-
-.repo {
-    border: 1px solid rgba(89, 150, 89, 0);
-    background: #3cb46e;
-    padding: 5px 10px;
-    border-radius: 3px;
-}
-
-.repo:hover { 
-    background: #38a766;
-}
-
-.repo a {
+.source-code a {
     color: white;
+    background: #3CB46E;
+    padding: 7px 10px;
+    border: 1px solid rgba(255, 255, 255, 0);
+    border-radius: 3px;
 }
 
-.small-menu {
+.source-code a:hover {
+    background: #35a062;
+}
+
+/* -- Navigation Menu/Burger -- */
+.menu {
     display: none;
+    cursor: pointer;
 }
 
-.home-folio img {
-    border-radius: 50%;
+.menu div {
+    transition: 0.4s ease-in-out;
 }
 
-.toggle .bar-1 {
-    transform: rotate(-45deg) translate(-2.5px, 6px);
+.l1, .l3 {
     background: #111;
+    height: 3px;
+    width: 25px;
 }
 
-.toggle .bar-2 {
+.l2 {
+    width: 22px;
+    height: 3px;
+    background: #111;
+    margin: 3px 0 3px auto;
+}
+
+.rotate .l1 {
+    transform: rotate(-45deg) translate(-2px, 6px);
+}
+
+.rotate .l2 {
     opacity: 0;
 }
 
-.toggle .bar-3 {
-    transform: rotate(45deg) translate(-2.5px, -6px);
-    background: #111;
+.rotate .l3 {
+    transform: rotate(45deg) translate(-2px, -6px);    
 }
 
+/* -- Homepage -- */
 #homepage {
     background-image: url(../img/rhino.jpg);
-    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     height: 100vh;
-    color: white;
+}
+
+.homepage-header-container {
     display: flex;
     justify-content: center;
-    flex-direction: column;
     align-items: center;
-}
-
-.homepage-container {
-    width: 65%;
     height: 80vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    color: white;
 }
 
-.title {
+.site-name {
     font-family: 'Kaushan Script', cursive;
-    font-size: 30px;
-    margin-bottom: 15px;
+    font-size: 46px;
 }
 
-.pics {
-    margin-bottom: 5px;
+.mils {
+    font-size: 18px;
+    margin: 15px 0 5px;
 }
 
 .creators {
-    margin-bottom: 18px;
+    font-size: 18px;
 }
 
-.home-form {
+.homepage-footer {
     display: flex;
-    font-size: 16px;
-    margin-bottom: 15px;
-}
-
-.magni-search {
-    background: rgba(255, 255, 255, 0.700);
-    border: 2px solid rgba(0, 0, 0, 0);
-    border-radius: 5px 0 0 5px;
-    outline: none;
-}
-
-.magni-search i {
-    color: rgb(47, 47, 47);
-    cursor: pointer;
-    padding: 10px;
-}
-
-.search-bar {
-    font-size: 16px;
-    padding: 15px 15px 15px 0;
-    border: 2px solid rgba(0, 0, 0, 0);
-    border-radius: 0 5px 5px 0;
-    background: rgba(255, 255, 255, 0.700);
-    outline: none;
-    width: 100%;
-}
-
-input[type="search"]::-webkit-search-cancel-button {
-    font-size: 1000px;
-}
-
-input[type="search"]::-webkit-search-decoration:hover,
-input[type="search"]::-webkit-search-cancel-button:hover { 
-    cursor:pointer; 
-}
-
-.trends {
-    font-size: 14px;
-}
-
-.trends a {
-    text-decoration: none;
-    color: rgb(224, 224, 224);
-}
-
-.trends a:hover {
-    color: white;
-}
-
-#homepage-footer {
-    font-size: 14px;
-    display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: flex-end;
-    width: 95%;
-    height: 11vh;
-    margin: 0 auto;
-    color: rgb(170, 170, 170);
+    height: 17vh;
+    color: red;
 }
 
-#homepage-footer a {
+.image-owner a {
+    font-size: 14px;
     color: white;
     text-decoration: none;
 }
 
-#homepage-footer a:hover {
-    color: black;
+/* -- Image Container -- */
+.images {
+    background: whitesmoke
 }
 
 #image-container {
@@ -309,7 +197,7 @@ input[type="search"]::-webkit-search-cancel-button:hover {
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 20px;
     width: 95%;
-    margin: 50px auto 0;
+    margin: 0 auto;
 }
 
 #image-container img {
