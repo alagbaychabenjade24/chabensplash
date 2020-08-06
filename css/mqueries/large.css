@@ -52,6 +52,10 @@
     }
 
     /* -- Image Container -- */
+    .images {
+        padding-top: 30px;
+    }
+
     #image-container {
         grid-template-columns: 1fr 1fr;
         grid-gap: 20px;
