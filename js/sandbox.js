@@ -16,7 +16,7 @@ let photosArray = [];
 // Unsplase API
 const count = 30;
 const apiKey = 'oL5Hq_C8EVp-KyEOuGgFf6b_cpOaaNxFfXPKKP7phn4';
-// const apiUrl = `https://api.unsplash.com/photos/random/?client_id=${apiKey}&count=${count}`;
+const apiUrl = `https://api.unsplash.com/photos/random/?client_id=${apiKey}&count=${count}`;
 
 // Check if all images were loaded
 function imageLoaded() {
